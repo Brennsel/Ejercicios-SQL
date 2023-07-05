@@ -24,9 +24,14 @@ insert into Casa (id_casa, calle, numeracion, es_departamento) values (345678, '
 
 insert into Usuario (id_usuario, nombre, apellido, id_casa2) values (854267, 'Noelia', 'Devito', 163748);
 
+#consulta para mostrar tabla casa
 SELECT *
-FROM Casa
-WHERE calle = 'Carcaraña';  /*filtrar */
+FROM Casa;
 
+#consulta para mostrar tabla usuario
 SELECT *
 FROM Usuario;
+
+SELECT id_casa
+FROM Casa
+WHERE calle = 'Carcaraña';  /*filtrar */
