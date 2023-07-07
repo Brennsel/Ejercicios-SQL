@@ -45,6 +45,12 @@ ON e.jugador = j.codigo
 WHERE j.nombre = 'Pau Gasol';
 
 #9. Mostrar los puntos por partido del jugador ‘Pau Gasol’ en la temporada ’04/05′.
+SELECT e.Puntos_por_partido
+FROM estadisticas AS e
+INNER JOIN jugadores AS j
+ON e.jugador = j.codigo
+WHERE j.nombre = 'Pau Gasol';  <------
+
 #10. Mostrar el número de puntos de cada jugador en toda su carrera.
 #11. Mostrar el número de jugadores de cada equipo.
 #12. Mostrar el jugador que más puntos ha realizado en toda su carrera.
