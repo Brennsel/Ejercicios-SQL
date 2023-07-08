@@ -182,6 +182,14 @@ WHERE precio = (SELECT MAX(precio)
 #4. Lista todos los productos del fabricante Asus que tienen un precio superior al precio 
 #medio de todos sus productos.
 
+SELECT *
+FROM producto 
+WHERE precio > (SELECT AVG(precio) 
+				FROM producto
+                WHERE codigo_fabricante IN (SELECT codigo
+											FROM fabricante
+											WHERE nombre = 'Asus'));
+
 #Subconsultas con IN y NOT IN
 #1. Devuelve los nombres de los fabricantes que tienen productos asociados. (Utilizando IN o NOT IN).
 SELECT f.nombre
@@ -192,8 +200,6 @@ GROUP BY f.nombre
 HAVING COUNT(p.codigo)>=1;                          #<<<<<<<
 
 #2. Devuelve los nombres de los fabricantes que no tienen productos asociados. (Utilizando IN o NOT IN).
-
-
 #Subconsultas (En la cláusula HAVING)
 #1. Devuelve un listado con todos los nombres de los fabricantes que tienen el mismo número 
 #de productos que el fabricante Lenovo.
