@@ -9,8 +9,6 @@ datos:
 Muestre la suma total del peso de los jugadores, donde la conferencia sea Este y la posición sea
 centro o esté comprendida en otras posiciones.
 
-POS: 2
-CLAVE: 14043
 */
 
 /*POS*/
@@ -37,8 +35,6 @@ Clave: La clave del candado B estará con formada por la/s siguientes consulta/s
 datos:
 La clave será igual al conteo de partidos jugados durante las temporadas del año 1999.
 
-POS: 3
-CLAVE: 3480
 */
 
 /*POS*/
@@ -73,8 +69,6 @@ Para obtener el siguiente código deberás redondear hacia abajo el resultado qu
 sumar: el promedio de puntos por partido, el conteo de asistencias por partido, y la suma de 
 tapones por partido. Además, este resultado debe ser, donde la división sea central.
 
-POS: 1
-CLAVE: 631
 */
 
 /*POS*/
@@ -107,8 +101,6 @@ datos:
 Para obtener el siguiente código deberás redondear hacia abajo, la suma de puntos por partido 
 de todos los jugadores de procedencia argentina
 
-POS: 4
-CLAVE: 191
 */ 
 
 /*POS*/
